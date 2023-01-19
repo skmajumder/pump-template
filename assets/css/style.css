@@ -13,6 +13,7 @@
     justify-content: space-between;
     padding: 0 3.2rem;
     position: relative;
+    height: 10rem;
 }
 
 .main-nav--list {
@@ -52,13 +53,17 @@
 }
 
 /* Banner */
+
 .section-banner {
-    margin-top: 7.4rem;
+    background-image: url('../img/banner-group-back.png');
+    background-repeat: no-repeat;
+    background-position: 97% 31%;
 }
 
 .banner {
     padding: 0 3.2rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
 }
 
 .banner--description {
@@ -70,27 +75,7 @@
 }
 
 .banner--img {
-    position: absolute;
-    width: 45%;
-}
-
-.banner--img-one {
-    z-index: 2;
-    left: -7%;
-    top: 77%;
-    width: 55%;
-}
-
-.banner--img-two {
-    z-index: 1;
-    right: 25%;
-    width: 40%;
-}
-
-.banner--img-three {
-    z-index: 2;
-    top: 25%;
-    right: 0;
+    width: 100%;
 }
 
 /* Section Instagram Likes */
@@ -124,6 +109,12 @@
 }
 
 /*  Section Video */
+.section-video {
+    background-image: url("../img/bg-frame.png");
+    background-repeat: no-repeat;
+    background-position: 96% 109%;
+}
+
 .video {
     position: relative;
 }
@@ -171,6 +162,10 @@
 }
 
 /* Section Why Pump */
+.section-why-pump {
+    background-color: var(--color-footer-bg);
+}
+
 .why-pump--icon-box {
     padding: 6.5rem 5rem;
 }
@@ -184,7 +179,7 @@
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    padding: 6.5rem 9rem;
+    padding: 6.5rem 7rem;
     text-align: center;
     justify-content: space-between;
 }
@@ -207,6 +202,10 @@
 .feature-list li {
     font-size: 16px;
     line-height: 26px;
+}
+
+.feature-list li:not(:last-of-type) {
+    margin-bottom: 1.5rem;
 }
 
 .feature-list li::before {
@@ -359,6 +358,10 @@ span.more i.fa {
 .footer-social-accounts,
 .subscribe-form {
     margin-top: 2rem;
+}
+
+.social-account:not(:last-of-type) {
+    margin-right: 1rem;
 }
 
 .footer-nav--list {
