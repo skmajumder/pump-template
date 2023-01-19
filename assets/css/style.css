@@ -175,6 +175,12 @@
 }
 
 /* Section Pricing Plan */
+.section-pricing-plan {
+    background-image: url("../img/bg-frame-2.png");
+    background-repeat: no-repeat;
+    background-position: 96% 10%;
+}
+
 .pricing-plan--single {
     display: flex;
     flex-direction: column;
@@ -222,6 +228,12 @@
 }
 
 /* Section Customer Rating */
+.section-customer-rating {
+    background-image: url("../img/bg-frame-3.png");
+    background-repeat: no-repeat;
+    background-position: 2% 10%;
+}
+
 .customer-rating--single {
     padding: 4rem 4rem 2.6rem;
     display: flex;

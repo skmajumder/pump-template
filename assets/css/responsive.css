@@ -4,19 +4,51 @@
 /* BELOW 1344px (Smaller desktops) */
 /**************************/
 
-@media (max-width: 84em) {}
+@media (max-width: 84em) {
+
+    .container {
+        max-width: 124rem;
+        padding: 0 3rem;
+    }
+
+    .header {
+        padding: 0 3rem;
+    }
+
+    .banner {
+        padding: 0 3rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 /**************************/
 /* BELOW 1200px (Landscape Tablets) */
 /**************************/
 
-@media (max-width: 75em) {}
+@media (max-width: 75em) {
+
+    /* 9px / 16px */
+    html {
+        font-size: 56.25%;
+    }
+
+    .banner {
+        padding: 0 3rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 /**************************/
 /* BELOW 944px (Tablets) */
 /**************************/
 
-@media (max-width: 59em) {}
+@media (max-width: 59em) {
+
+    /* 8px / 16px */
+    html {
+        font-size: 50%;
+    }
+}
 
 /**************************/
 /* BELOW 704px (Smaller tablets) */
