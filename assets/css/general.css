@@ -94,7 +94,6 @@ li {
 .headline-quaternary {
     font-size: 2rem;
     line-height: 24px;
-    margin-bottom: 1.5rem;
 }
 
 /* Layout */
@@ -210,15 +209,18 @@ li {
 
 .how-work--icon-box,
 .why-pump--icon-box,
-.pricing-plan--single {
+.pricing-plan--single,
+.customer-rating--single {
     background: #FFFFFF;
     box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.04);
     border-radius: 30px;
-    transition: box-shadow 400ms ease;
+    transition: all 300ms;
 }
 
 .how-work--icon-box:hover,
 .why-pump--icon-box:hover,
-.pricing-plan--single:hover {
+.pricing-plan--single:hover,
+.customer-rating--single:hover {
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transform: translateY(-2%);
 }
