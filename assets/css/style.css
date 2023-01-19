@@ -1,0 +1,225 @@
+/**
+
+1. Header
+2. Main
+    -- Banner
+
+
+*/
+
+/* Header */
+.header {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3.2rem;
+    position: relative;
+}
+
+.main-nav--list {
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 22px;
+    color: var(--color-nav-text);
+    transition: color 300ms ease-in;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: var(--color-primary);
+}
+
+.nav-link.active:link,
+.nav-link.active:visited {
+    color: var(--color-primary);
+}
+
+.nav-meta {
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-meta i.fa {
+    font-size: 2.4rem;
+    color: var(--color-nav-text);
+}
+
+/* Banner */
+.section-banner {
+    margin-top: 7.4rem;
+}
+
+.banner {
+    padding: 0 3.2rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.banner--description {
+    margin-bottom: 3rem;
+}
+
+.banner--img-box {
+    position: relative;
+}
+
+.banner--img {
+    position: absolute;
+    width: 45%;
+}
+
+.banner--img-one {
+    z-index: 2;
+    left: -7%;
+    top: 77%;
+    width: 55%;
+}
+
+.banner--img-two {
+    z-index: 1;
+    right: 25%;
+    width: 40%;
+}
+
+.banner--img-three {
+    z-index: 2;
+    top: 25%;
+    right: 0;
+}
+
+/* Section Instagram Likes */
+.section-instagram-likes {
+    background-color: var(--color-footer-bg);
+    padding: 9rem 11rem;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.instagram-likes {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.instagram-likes--details:not(:first-of-type) {
+    text-align: center;
+}
+
+.instagram-likes--details .headline-secondary {
+    font-weight: 700;
+}
+
+/* Section How Work */
+.how-work--icon-box {
+    background: #FFFFFF;
+    box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.04);
+    border-radius: 30px;
+    padding: 8.4rem 6rem;
+    transition: box-shadow 400ms ease;
+}
+
+.how-work--icon-box:hover {
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.how-work--step {
+    margin-top: 4.2rem;
+}
+
+/*  Section Video */
+.video {
+    position: relative;
+}
+
+.video--thumb {
+    width: 100%;
+}
+
+.play-btn {
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    right: auto;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play-btn::before {
+    content: '';
+    background-color: var(--color-primary-tint);
+    display: inline-block;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    transform: translate(33%, 0%);
+}
+
+.play-btn::after {
+    content: '';
+    background-color: rgba(233, 0, 35, 0.4);
+    display: inline-block;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    transform: translate(-78%, -24%);
+}
+
+.video-btn {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    right: auto;
+    top: 50%;
+    transform: translate(-35%, -50%);
+}
+
+/* Section Why Pump */
+.why-pump--icon-box {
+    padding: 6.5rem 5rem;
+}
+
+.why-pump--reason {
+    margin-top: 4rem;
+}
+
+/* Section Pricing Plan */
+.pricing-plan--single {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 6.5rem 9rem;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.single--plan-saving {
+    padding: 1.1rem 6.8rem;
+    background-color: var(--color-primary-tint);
+    border-radius: 5px;
+}
+
+.feature-list {
+    margin-bottom: 4rem;
+    text-align: left;
+}
+
+.feature-list li {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.feature-list li::before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    color: var(--color-icon);
+    margin-right: 1rem;
+}
+
+.body-close {
+    display: none;
+}
